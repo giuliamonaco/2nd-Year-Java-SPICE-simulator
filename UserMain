@@ -1,0 +1,11 @@
+package coe318.lab8;
+
+public class UserMain {
+     public static void main(String[] args) {
+        //create a new circuit that allows for the resistors and voltage classes to be implemented
+        // a new circuit of a circuitUI that allows for the circuitUI methods to be implemetned
+        Circuit userCircuit = new Circuit(new CircuitUI());
+        //start the program
+        userCircuit.start();
+     }
+}
