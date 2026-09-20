@@ -1,0 +1,14 @@
+
+package coe318.lab8;
+
+public interface CircuitInterface {
+    
+    public void setCircuit(Circuit circuit);
+    
+    public void userDone();
+    
+    public void spiceDisplay();
+    
+    public String getUserInput();
+   
+}
