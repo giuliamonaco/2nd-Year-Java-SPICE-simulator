@@ -1,0 +1,30 @@
+package coe318.lab8;
+
+
+public class Voltage {
+    private int posNode;
+    private int negNode;
+    private double volt;
+    // i will be used to increment the elementNum each time an object is created
+    //static because I want the value of i to remembered be for the whole class, not each object
+    private static int i = 1;
+    private int elementNum;
+    
+    public Voltage(int posNode, int negNode, double volt){
+        this.posNode = posNode;
+        this.negNode = negNode;
+        this.volt = volt;
+        //increment i after setting elementNum equal to it
+        this.elementNum = i++;
+    } 
+    
+    public double getVolt(){
+        return(this.volt);
+    }
+    
+    //will be used to print out the spice command
+    @Override
+    public String toString(){
+         return "V" + elementNum + " " + posNode + " " + negNode + " DC " + volt;
+    }
+}
